@@ -6,8 +6,8 @@ const Heading = ({ title }) => {
   const part2 = words.at(-1);
 
   return (
-    <h1 className="font-bold font-mono text-black  ">
-      {part1} <span className="text-indigo-700">{part2}</span>
+    <h1 className="font-bold text-3xl  capitalize font-sans text-black  ">
+      {part1} <span className="text-[#680099]">{part2}</span>
     </h1>
   );
 };
