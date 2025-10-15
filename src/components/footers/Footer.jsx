@@ -1,8 +1,8 @@
 import React from "react";
-import Logo from "../assets/logo.png";
+import Logo from "../../assets/logo.png";
 const Footer = () => {
   return (
-    <div className="flex w-full gap-10 py-10 my-10 items-center justify-around ">
+    <div className=" flex w-full gap-10 py-10 my-10 items-center justify-around ">
       <div className="flex flex-col max-w-[200px] gap-2 ">
         <h1 className="font-bold ">Vigovia tech pvt. ltd</h1>
         <p>

@@ -1,6 +1,6 @@
 import React from "react";
-import DayX from "./ui/DayX.jsx";
-import TripTitle from "./ui/TripTitle.jsx";
+import DayX from "../ui/DayX.jsx";
+import TripTitle from "../ui/TripTitle.jsx";
 import DayTask from "./DayTask.jsx";
 
 const DayCard = ({ data }) => {

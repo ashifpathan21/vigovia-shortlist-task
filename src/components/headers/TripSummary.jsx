@@ -1,9 +1,9 @@
 import React from "react";
-import Icon1 from "../assets/icons/icon1.svg";
-import Icon2 from "../assets/icons/icon2.svg";
-import Icon3 from "../assets/icons/icon3.svg";
-import Icon4 from "../assets/icons/icon4.svg";
-import Icon5 from "../assets/icons/icon5.png";
+import Icon1 from "../../assets/icons/icon1.svg";
+import Icon2 from "../../assets/icons/icon2.svg";
+import Icon3 from "../../assets/icons/icon3.svg";
+import Icon4 from "../../assets/icons/icon4.svg";
+import Icon5 from "../../assets/icons/icon5.png";
 const TripSummary = ({ name, destination, day }) => {
   const icons = [Icon1, Icon2, Icon3, Icon4, Icon5];
   return (
@@ -14,8 +14,12 @@ const TripSummary = ({ name, destination, day }) => {
         day - 1
       } Nights`}</h1>
       <div className="flex gap-3 ">
-        {icons.map((icon) => (
-          <img src={icon} className="h-5 w-5 aspect-square object-cover" />
+        {icons.map((icon, i) => (
+          <img
+            key={i}
+            src={icon}
+            className="h-5 w-5 aspect-square object-cover"
+          />
         ))}
       </div>
     </div>

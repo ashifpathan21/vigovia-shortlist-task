@@ -1,6 +1,6 @@
 import React from "react";
-import Heading from "./ui/Heading.jsx";
-import Table from "./ui/Table.jsx";
+import Heading from "../ui/Heading.jsx";
+import Table from "../ui/Table.jsx";
 const ScopeOfService = () => {
   const thead = [
     { key: "service", value: "service" },

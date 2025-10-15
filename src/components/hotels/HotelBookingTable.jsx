@@ -1,5 +1,5 @@
 import React from "react";
-import Table from "./ui/Table.jsx";
+import Table from "../ui/Table.jsx";
 
 const HotelBookingTable = ({ data }) => {
   const thead = [

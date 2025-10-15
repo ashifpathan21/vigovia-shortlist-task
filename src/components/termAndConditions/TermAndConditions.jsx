@@ -1,5 +1,5 @@
 import React from "react";
-import Heading from "./ui/Heading.jsx";
+import Heading from "../ui/Heading.jsx";
 
 const TermAndConditions = () => {
   return (

@@ -1,11 +1,12 @@
 import React from "react";
-import ArrowCart from "./ui/ArrowCart.jsx";
+import ArrowCart from "../ui/ArrowCart.jsx";
 
 const FlightSummaries = ({ data }) => {
   return (
     <div className="my-10 flex flex-col gap-4 w-full ">
-      {data?.map((flight) => (
+      {data?.map((flight, i) => (
         <ArrowCart
+          key={i}
           heading={flight?.flightDate}
           title={flight?.flightName}
           description={`from ${flight?.from} to ${flight?.to}`}

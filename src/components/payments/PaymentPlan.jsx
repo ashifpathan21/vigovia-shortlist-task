@@ -1,7 +1,7 @@
 import React from "react";
-import Heading from "./ui/Heading.jsx";
-import ArrowCart from "./ui/ArrowCart.jsx";
-import Table from "./ui/Table.jsx";
+import Heading from "../ui/Heading.jsx";
+import ArrowCart from "../ui/ArrowCart.jsx";
+import Table from "../ui/Table.jsx";
 const PaymentPlan = () => {
   const data = {
     totalAmount: "₹ 9,00,000 ",

@@ -1,5 +1,5 @@
 import React from "react";
-import Task from "./ui/Task.jsx";
+import Task from "../ui/Task.jsx";
 const DayTask = ({ morningPlan, afternoonPlan, eveningPlan }) => {
   return (
     <div className="p-3 gap-4  rounder-xl border-l-6 border-[#2F80ED] flex-col flex justify-center  items-center ">

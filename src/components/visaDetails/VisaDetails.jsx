@@ -1,6 +1,6 @@
 import React from "react";
-import FlexCol from "./ui/FlexCol.jsx";
-import Heading from "./ui/Heading.jsx";
+import FlexCol from "../ui/FlexCol.jsx";
+import Heading from "../ui/Heading.jsx";
 
 const VisaDetails = () => {
   const visa = {

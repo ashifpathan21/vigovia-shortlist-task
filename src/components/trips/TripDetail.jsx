@@ -1,5 +1,5 @@
 import React from "react";
-import FlexCol from "./ui/FlexCol.jsx";
+import FlexCol from "../ui/FlexCol.jsx";
 const TripDetail = ({
   departureFrom = "mumbai",
   departure = "31/10/2025",
