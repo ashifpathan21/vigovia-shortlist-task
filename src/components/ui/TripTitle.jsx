@@ -9,7 +9,7 @@ const TripTitle = ({ day, date, title }) => {
     <div className="flex flex-col gap-2 items-center max-w-[30%] w-full justify-center ">
       <img
         src={images[day % 4]}
-        className="h-[216px] w-[216px] aspect-square rounded-full object-cover"
+        className="max-h-[216px] max-w-[216px]  aspect-square rounded-full object-cover"
       />
       <h1 className="font-bold text-xl ">{date}</h1>
       <h1 className="text-md font-semibold">{title}</h1>

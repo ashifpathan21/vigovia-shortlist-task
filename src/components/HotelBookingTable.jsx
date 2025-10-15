@@ -10,7 +10,7 @@ const HotelBookingTable = ({ data }) => {
     { key: "hotelName", value: "Hotel Name" },
   ];
   return (
-    <div className="my-10 ">
+    <div className="my-5  ">
       <Table tableHead={thead} tableData={data} />
     </div>
   );
