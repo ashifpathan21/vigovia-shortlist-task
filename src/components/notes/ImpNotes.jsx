@@ -1,8 +1,8 @@
 import React from "react";
 import Heading from "../ui/Heading.jsx";
 import Table from "../ui/Table.jsx";
-const ImpNotes = () => {
-  const notes = [
+const ImpNotes = ({
+  notes = [
     {
       point: "Airlines Standard Policy",
       details:
@@ -28,7 +28,8 @@ const ImpNotes = () => {
       details:
         "In case of visa rejection, visa fees or any other non cancellable component cannot be reimbursed at any  cost.",
     },
-  ];
+  ],
+}) => {
   const thead = [
     { key: "point", value: "Point" },
     { key: "details", value: "details" },

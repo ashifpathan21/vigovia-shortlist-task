@@ -1,9 +1,17 @@
 import React from "react";
 
-const Button = ({ title, onClick }) => {
+// Button Component
+const Button = ({ title, onClick, type = "button", variant = "primary" }) => {
+  const variants = {
+    primary: "bg-[#541C9C] hover:bg-[#6B24B8]",
+    secondary: "bg-gray-600 hover:bg-gray-700",
+    danger: "bg-red-600 hover:bg-red-700",
+  };
+
   return (
     <button
-      className="bg-[#541C9C] rounded-4xl p-3  w-full mx-auto px-10  text-white font-semibold "
+      type={type}
+      className={`${variants[variant]} rounded-lg p-3 w-full mx-auto px-10 text-white font-semibold transition-colors`}
       onClick={onClick}
     >
       {title}

@@ -1,8 +1,7 @@
 import React from "react";
 import Heading from "../ui/Heading.jsx";
 import HotelBookingTable from "./HotelBookingTable.jsx";
-const HotelBooking = () => {
-  const data = [
+const HotelBooking = ({data = [
     {
       city: "singapore",
       checkIn: "24/02/2024",
@@ -31,7 +30,8 @@ const HotelBooking = () => {
       nights: "2",
       hotelName: "Super Townhouse Oak Vashi formerly Blue Diamond",
     },
-  ];
+  ]}) => {
+  
   const instructions = [
     "All hotels are tentative and can be replaced with similar.",
     "Breakfast included for all hotel stays.",

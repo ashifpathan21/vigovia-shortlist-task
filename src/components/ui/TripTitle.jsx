@@ -6,7 +6,7 @@ import Img4 from "../../assets/placeImage/img4.jpg";
 const TripTitle = ({ day, date, title }) => {
   const images = [Img1, Img2, Img3, Img4];
   return (
-    <div className="flex flex-col gap-2 items-center max-w-[30%] w-full justify-center ">
+    <div className="flex flex-col gap-2 items-center max-w-[30%]  w-full justify-center ">
       <img
         src={images[day % 4]}
         className="max-h-[216px] max-w-[216px]  aspect-square rounded-full object-cover"

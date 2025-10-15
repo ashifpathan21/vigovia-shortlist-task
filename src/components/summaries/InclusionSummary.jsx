@@ -2,14 +2,8 @@ import React from "react";
 import Heading from "../ui/Heading.jsx";
 import Table from "../ui/Table.jsx";
 
-const InclusionSummary = () => {
-  const thead = [
-    { key: "category", value: "category" },
-    { key: "count", value: "count" },
-    { key: "details", value: "details" },
-    { key: "status", value: "status / comments" },
-  ];
-  const data = [
+const InclusionSummary = ({
+  data = [
     {
       category: "flight",
       count: "2",
@@ -29,7 +23,15 @@ const InclusionSummary = () => {
       details: "Airport to Hotel - Hotel to Attractions - Day trips if any",
       status: "included",
     },
+  ],
+}) => {
+  const thead = [
+    { key: "category", value: "category" },
+    { key: "count", value: "count" },
+    { key: "details", value: "details" },
+    { key: "status", value: "status / comments" },
   ];
+
   return (
     <div className="flex flex-col gap-6 mb-10 ">
       <Heading title={"Inclusion Summary"} />

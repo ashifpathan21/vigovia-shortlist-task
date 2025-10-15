@@ -2,18 +2,14 @@ import React from "react";
 import Heading from "../ui/Heading.jsx";
 import ArrowCart from "../ui/ArrowCart.jsx";
 import Table from "../ui/Table.jsx";
-const PaymentPlan = () => {
-  const data = {
-    totalAmount: "₹ 9,00,000 ",
-    totalAmountDesc: "for 3 pax (inclusive of GST)",
-    tcsStatus: "Not Collected",
-  };
+const PaymentPlan = ({ data }) => {
+
   const thead = [
     { key: "installment", value: "installment" },
     { key: "amount", value: "amount" },
     { key: "dueDate", value: "due date" },
   ];
-  const tdata = [
+  const tdata = data?.installments || [
     {
       installment: "installment 1",
       amount: "₹3,50,000",

@@ -1,7 +1,6 @@
 import React from "react";
 import DayCard from "./DayCard.jsx";
-const DayPlan = () => {
-  const data = [
+const DayPlan = ({ data = [
     {
       day: 1,
       date: "27th November",
@@ -58,7 +57,8 @@ const DayPlan = () => {
         "Explore Gardens by the Bay, including Super Tree Grove (3-4 hours)",
       ],
     },
-  ];
+  ]}) => {
+ 
   return (
     <div className="flex flex-col justify-start w-full  gap-6 ">
       {data?.map((data) => (

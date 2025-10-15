@@ -2,12 +2,7 @@ import React from "react";
 import FlexCol from "../ui/FlexCol.jsx";
 import Heading from "../ui/Heading.jsx";
 
-const VisaDetails = () => {
-  const visa = {
-    visaType: "123456",
-    validity: "123456",
-    processingDate: "123456",
-  };
+const VisaDetails = ({ visa }) => {
   return (
     <div className="flex flex-col gap-6 mb-10 ">
       <Heading title="Visa details" />
